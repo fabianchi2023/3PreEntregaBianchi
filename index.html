@@ -11,10 +11,10 @@
     <div class="container my-4" id="contenedor">
         <div class="row my-4">
             <div class="col">
-                <ul class="nav justify-content-center">
+                <ul id="barraNavegacion">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/escudo.jpg" alt="EscudoSFA" width="32"></a>
-                      </li>
+                        <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/escudo.jpg" alt="EscudoSFA" width="64"></a>
+                    </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
                     </li>
@@ -24,12 +24,37 @@
                     <li class="nav-item">
                       <a class="nav-link" href="#">Historia</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/escudo.jpg" alt="EscudoSFA" width="64"></a>
+                    </li>
                   </ul>
             </div>
         </div>
-        <div id="servicios" class="row"></div>
+        <div class="row text-center">
+          <h1>Bienvenidos al sitio de reserva de la Sociedad de Fomento Alianza</h1>
+          <p>Registrando tu nombre y apellido, podras seleccionar los servicios ofrecidos y realizar las reservas de manera online.</p>
+          <p>Ademas te ofrecemos algunas imagenes para que guardes en tus dispositivos y compartas en las redes sociales, y un poco de historia de la sociedad de fomento que le dio alegria al barrio!</p>
+        </div>
+
+        <div class="row">
+          <form class="p-5 my-4 formulario">
+            <div class="mb-3 text-center">
+              <label for="nombre" class="form-label">Ingresa tu nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3 text-center">
+              <label for="apellido" class="form-label">Ingresa tu apellido</label>
+              <input type="text" class="form-control" id="apellido" >
+            </div>
+            <div id="boton">
+              <button type="button" class="btn btn-primary active" id="ingresar"><a href="./servicios.html">Ingresar</a>
+              </button>
+            </div>
+          </form>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
